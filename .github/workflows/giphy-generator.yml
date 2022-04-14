@@ -6,12 +6,12 @@ on:
   pull_request:
     types: [opened, edited]
   issue_comment:
-    types: [created, exited]
+    types: [created, edited]
 
 jobs:
   giphy-generator:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: GIPHY Generator
         uses: IAmHughes/giphy-generator@v1.0.0
@@ -21,4 +21,3 @@ jobs:
         with:
           rating: 'g'
           lang: 'en'
-        
