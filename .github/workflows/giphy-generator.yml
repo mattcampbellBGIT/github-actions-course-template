@@ -12,6 +12,8 @@ jobs:
   giphy-generator:
     runs-on: ubuntu-latest
 
+    
+
     steps:
       - name: GIPHY generator
         uses: IAmHughes/giphy-generator@v1.0.0
@@ -20,4 +22,4 @@ jobs:
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
         with:
           rating: 'g'
-          langZ: 'en'
+          lang: 'en'
