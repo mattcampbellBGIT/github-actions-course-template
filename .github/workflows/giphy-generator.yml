@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [opened, edited]
   issue_comment:
-    types: [created, edited]
+    types: [created, exited]
 
 jobs:
   giphy-generator:
@@ -21,3 +21,4 @@ jobs:
         with:
           rating: 'g'
           lang: 'en'
+          
